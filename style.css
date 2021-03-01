@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a:hover {
+  color: black;
+}
+
+.decor_line {
+  background-color: #ffffff;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.homepage {
+  background-image: url("images/bg.jpg");
+  background-color: #e99400;
+  background-size: cover;
+  background-position:top;
+  height: fit-content;
+  background-repeat: no-repeat;
+  color:#ffffff;
+  margin: 0;
+}
+
+.homepage .body {
+  padding-top: 2%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.homepage .header {
+  text-align: center;
+}
+
+.homepage .header .menu {
+  list-style-type: none;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 0;
+  font-weight: lighter;
+  font-size: 150%;
+}
+
+.homepage .header .menu ul {
+  margin: 0;
+}
+
+.homepage .header .menu li {
+  display: inline;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+
+.homepage .text {
+  text-align: left;
+  margin-top: 10%;
+  padding-bottom: 5%;
+}
+
+@media screen and (min-width: 400px) { 
+  .homepage .text {
+  width: 30%; }
+}
+
+.homepage .text h1{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size:1000%;
+  margin: 0;
+  padding: 0;
+}
+
+.homepage .text h2{
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 200%; 
+  margin-top: 2%;
+  padding: 0;
+}
+
+.homepage .text h3{
+  font-size: 100%;
+  margin-top: 5%;
+  padding: 0;
+}
+
+.img_decor {
+  padding: 0;
+  margin: 0;
+  height: 1px;
+}
+
+.footer {
+  background-color: #e99400;
+  text-align: center;
+  color:#ffffff;
+}
+
+.footer .content {
+  padding-top: 3%;
+  padding-bottom: 10px;
+}
+
+.footer .content h3 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.footer .content h4 {
+  font-style: italic;
+}
+
+.footer .contacts {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.footer .menu {
+  list-style-type: none;
+  padding: 0;
+  font-size: 100%;
+}
+
+.footer .menu li {
+  display: inline;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.icon{
+    background-color: transparent;
+    border: none; 
+    padding: 0; 
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
