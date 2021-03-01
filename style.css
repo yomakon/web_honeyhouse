@@ -115,18 +115,20 @@ a:hover {
   padding-bottom: 10px;
 }
 
-.footer .content h3 {
+.footer .contacts {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.footer .contacts h3 {
   font-size: large;
   font-weight: bold;
 }
 
-.footer .content h4 {
+.footer .contacts h4 {
   font-style: italic;
-}
-
-.footer .contacts {
-  padding-left: 20%;
-  padding-right: 20%;
+  margin: 0;
+  padding: 20px;
 }
 
 .footer .menu {
