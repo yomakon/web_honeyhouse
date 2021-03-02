@@ -30,10 +30,14 @@ a:hover {
   background-size: cover;
   background-position:top;
   font-family: Arial, Helvetica, sans-serif;
-  height: fit-content;
   background-repeat: no-repeat;
   color:#ffffff;
   margin: 0;
+}
+
+@media screen and (min-height: 720px) { 
+  .homepage  {
+  height: 100vh; }
 }
 
 .homepage .body {
