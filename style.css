@@ -270,13 +270,14 @@ input[type=checkbox]:checked ~ .menu-box{
 /*  Av. page main content box*/
 .page .content-box {
   height: fit-content;
-  min-height: 100vh;
+  min-height: calc(100vh - 50px);
   margin: 0;
+  padding: 0;
 }
 
 .page .content-box .content-info{
   height: fit-content;
-  padding: 50px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -296,6 +297,8 @@ input[type=checkbox]:checked ~ .menu-box{
   justify-content: space-around;
   align-items: baseline;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 /*  "About" page styles  */
