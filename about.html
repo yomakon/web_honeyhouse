@@ -7,23 +7,92 @@
     <meta name="keywords" content="honey" />
     <meta name="description" content="honey shop" />
     <meta name="author" content="Yoma" />
-    <title>&#x1F36F Honey House: О нас</title>
+    <title>Honey House: О нас</title>
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+
+<body class="page" id="top">
+
+<!--Site page header-->
+
+<header class= "header-box">
+  <img class ="logo_box" src="images/logo_white.png" alt="logo">
+  <label for="show-menu" class="show-button">Меню</label>
+  <input type="checkbox" id="show-menu" role="button">
+  <nav class="menu-box">
+      <ul>
+       <li>
+          <a href="home.html" title="Главная">Главная</a>
+        </li>
+        <li>
+          <a href="about.html" title="О нас">О нас</a>     
+        </li>
+        <li>
+          <a href="shop.html" title="Товары">Товары</a>    
+        </li>
+        <li>
+          <a href="news.html" title="Новости">Новости</a>
+        </li>
+        <li>
+          <a href="contacts.html" title="Контакты">Контакты</a>
+        </li>  
+      </ul>
+    </nav>
+</header>
+
+<!--Main site page content-->
+<section class="content-box">
+  <section class="content-info">
+    <h1>Мёд</h1>
+    <h2>Множество причин покупать у нас:</h2>
+  </section>
+  <section class="content-main">
+    <div class="about-reason-box">
+      <img class="reason-image" src="images/reason_eco.jpg" alt="reason_eco">
+      <div class="reason-header">
+        Эко-производство
+      </div>
+      <div class="reason-description">
+        Мы не используем репелленты и химикаты на полях, 
+        не подкармливаем пчёл, и вообще-то мы молодцы
+      </div>
+    </div>
+    <div class="about-reason-box">
+      <img class="reason-image" src="images/reason_trad.jpg" alt="reason_trad">
+      <div class="reason-header">
+        Мастера традиций
+      </div>
+      <div class="reason-description">
+        Наши технологии производства сочетают в себе
+        мудрость предков и эффективность современников
+      </div>
+    </div>
+    <div class="about-reason-box">
+      <img class="reason-image" src="images/reason_price.jpg" alt="reason_price">
+      <div class="reason-header">
+        Выгодные цены
+      </div>
+      <div class="reason-description">
+        Мы продаём и другие товары оптом и в розницу, 
+        а также делаем скидки постоянным клиентам
+      </div>
+    </div>
+  </section>
+</section>
   
 <!--Site footer-->
 <footer class="footer">
   <!--Arrow button with anchor to the top of the page-->
-  <a href="#Start" class="icon">
+  <a href="#top" class="icon">
     <i class="fa fa-chevron-up" aria-hidden="true"></i>
   </a>
   
   <!--Main content of footer-->
-  <div class="content">
+  <div class="footer-content">
     <img src="images/logo_white.png" alt="logo">
     <!--Navigation-->
-    <nav class="menu">
+    <nav class="footer-nav">
       <ul>
         <li>
           <a href="home.html" title="Главная">Главная</a>
@@ -45,7 +114,7 @@
   </div>
 
   <!--Contact info block-->
-  <div class="contacts">
+  <div class="footer-contacts">
     <div class="decor_line"></div>
     <h3>honeyhouse@gmail.com</h3>
     
@@ -65,9 +134,6 @@
   </div>
 </footer>
 
-
-
-
-
+</body>
 
 </html>
