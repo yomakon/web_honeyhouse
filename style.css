@@ -329,3 +329,58 @@ input[type=checkbox]:checked ~ .menu-box{
   padding-top: 10px;
 }
 
+/*  "News" page styles  */
+
+.news-article-box{
+  padding: 5vh;
+  width: 300px;
+  text-align: center;
+  background-color: white;  
+}
+
+.news-article-info{
+  margin: 5px;
+}
+
+.news-article-info .article-image{
+  clip-path: circle(50%);
+  width: 70%;
+  height: auto;
+}
+
+.news-article-info .article-header{
+  font-size: x-large;
+  margin: 5px;
+}
+
+.news-article-info .article-time{
+  font-size: large;
+  font-weight: lighter;
+}
+
+.news-article-box .article-description{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.news-article-box .article-read{
+  font-size: large;
+  font-weight: bold;
+  font-family: inherit;
+  text-align: center;
+  background-color: white;
+  color: #e99400;
+  border: #e99400;
+  border-style: solid;
+  margin: 5%;
+}
+
+.news-article-box .article-read a{
+  color: inherit;
+}
+
+.news-article-box .article-read:hover{
+  background-color:#e99400;
+  color: white;
+}
