@@ -393,14 +393,10 @@ input[type=checkbox]:checked ~ .menu-box{
 /*  "Contacts" page styles  */
 
 .accounts-box{
-  max-width: 40%;
-  min-width: 300px;
-  margin-left: 5%;
-  margin-right: 5%;
+  padding-left: 5%;
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
-  align-items: left;
 }
 
 .accounts-box .account-line{
@@ -409,7 +405,6 @@ input[type=checkbox]:checked ~ .menu-box{
   height: 10%;
   margin-top: 2%;
   margin-bottom: 2%;
-  margin-left: 5%;
   padding:0;
   display: flex;
   align-items: center;
@@ -427,17 +422,22 @@ input[type=checkbox]:checked ~ .menu-box{
   margin-right: 10px;
 }
 
+@media screen and (max-width: 760px){
+  .accounts-box .account-line{
+    font-size: large;
+  }
+}
+
 .feedback-form-box{
-  max-width: 40%;
-  min-width: 300px;
-  margin-left: 5%;
-  margin-right: 5%;
   margin-bottom: 5%;
+  max-width: 50%;
+  min-width: 300px;
 }
 
 .feedback-form{
   display: flex;
   flex-flow: column;
+
 }
 
 .feedback-form-title{
