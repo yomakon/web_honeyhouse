@@ -1,11 +1,13 @@
 body {
   margin: 0;
+  padding: 0;
   cursor: default;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 :hover, :not(:hover){
   transition: 0.5s;
 }
-
 
 html {
   scroll-behavior: smooth;  
@@ -22,30 +24,15 @@ a:hover {
   color: black;
 }
 
-.decor_line {
-  background-color: #ffffff;
-  height: 1px;
-  margin: 0;
-  padding: 0;
-}
-
-.decor_line_black {
-  background-color: black;
-  height: 1px;
-  margin: 0;
-  padding: 0;
-  width: inherit;
-}
-
+/*  Homepage styles block  */
 .homepage {
   background-image: url("images/bg.jpg");
   background-color: #e99400;
   background-size: cover;
   background-position:top;
+
   font-family: Arial, Helvetica, sans-serif;
-  background-repeat: no-repeat;
-  color:#ffffff;
-  margin: 0;
+  color: white;
 }
 
 @media screen and (min-height: 720px) { 
@@ -54,113 +41,111 @@ a:hover {
 }
 
 .homepage .body {
-  padding-top: 2%;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding: 2% 10% 0 10%;
 }
 
 .homepage .header {
   text-align: center;
+  white-space: nowrap;
 }
 
 .homepage .header .menu {
-  list-style-type: none;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding: 0;
+  margin: 2% 0 0 0;
+  padding: 2% 0 2% 0;
   font-weight: lighter;
   font-size: 150%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  border-left: none;
+  border-right: none;
 }
 
 .homepage .header .menu ul {
+  list-style-type: none;
   margin: 0;
+  padding: 0 15% 0 15%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.homepage .header .menu li {
-  display: inline;
-  margin-right: 5%;
-  margin-left: 5%;
+@media (max-width: 700px) {
+  .homepage .header .menu ul {
+    flex-direction: column;
+  }
 }
 
-
-.homepage .text {
+.homepage .main-text {
   text-align: left;
   margin-top: 10%;
   padding-bottom: 5%;
+  width: 20rem;
 }
 
-@media screen and (min-width: 400px) { 
-  .homepage .text {
-  width: 30%; }
-}
-
-.homepage .text h1{
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size:1000%;
+.homepage .main-text h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 10rem;
   margin: 0;
   padding: 0;
 }
 
-.homepage .text h2{
+.homepage .main-text h2{
   text-transform: uppercase;
-  font-size: 200%; 
-  margin-top: 2%;
-  padding: 0;
+  font-size: 2rem; 
+  margin: 0;
+  padding: 0 0 2% 0;
+  border-bottom-style: solid;
+  border-width: 1px;
 }
 
-.homepage .text h3{
-  font-size: 100%;
+.homepage .main-text h3{
+  font-size: 1rem;
   margin-top: 5%;
   padding: 0;
 }
-
-.img_decor {
-  padding: 0;
-  margin: 0;
-  height: 1px;
-}
-
 
 /*  Site footer styles  */
 .footer {
   background-color: #e99400;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   color:#ffffff;
 }
 
-.footer .footer-content {
-  padding-top: 3%;
-  padding-bottom: 10px;
+.footer-content {
+  margin: 2% 10% 0 10%;
 }
 
-.footer .footer-contacts {
-  padding-left: 20%;
-  padding-right: 20%;
+.footer-nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom-style: solid;
+  border-width: 1px;
 }
 
-.footer .footer-contacts h3 {
-  font-size: large;
+@media (max-width: 700px) {
+  .footer-nav ul {
+    flex-direction: column;
+  }
+}
+
+.footer-nav ul li{
+  margin: 1rem 0 1rem 0;
+}
+
+.footer-content h3 {
+  font-size: x-large;
   font-weight: bold;
 }
 
-.footer .footer-contacts h4 {
+.footer-content h4 {
   font-style: italic;
   margin: 0;
   padding: 20px;
 }
 
-.footer .footer-nav {
-  list-style-type: none;
-  padding: 0;
-  font-size: 100%;
-}
-
-.footer .footer-nav li {
-  display: inline;
-  margin-right: 5%;
-  margin-left: 5%;
-}
 
 .icon{
     background-color: transparent;
