@@ -176,6 +176,7 @@ a:hover {
   background-color: #e99400;
   font-weight: lighter;
   display: flex;
+  flex-wrap: wrap;
   z-index: 1;
   justify-content: space-between;
   align-items: center;
@@ -220,6 +221,7 @@ input[type=checkbox]{
 }
 
 input[type=checkbox]:checked ~ .menu-box{
+  position: sticky;
   display: flex;
   flex-basis: 100%;
 }
