@@ -1,0 +1,27 @@
+
+/*  "About" page styles  */
+.about-reason-box{
+  padding: 5vh;
+  width: 300px;
+  text-align: center;
+  background-color: white;
+}
+
+.about-reason-box:hover{
+  transform: scale(1.2);
+}
+
+.about-reason-box .reason-image{
+  clip-path: circle(40%);
+  width: 50%;
+  height: auto;
+}
+
+.about-reason-box .reason-header{
+  font-size: x-large;
+}
+
+.about-reason-box .reason-description{
+  text-align: center;
+  padding-top: 10px;
+}

@@ -1,0 +1,22 @@
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a:hover {
+  color: black;
+}
+
+@import "main.css";
+@import "header.css";
+@import "footer.css";
+
+@import "homepage.css";
+@import "about.css";
+@import "contacts.css";
+@import "news.css";
+@import "shop.css";

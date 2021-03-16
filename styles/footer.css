@@ -1,0 +1,51 @@
+/*  Site footer styles  */
+.footer {
+  background-color: #e99400;
+  text-align: center;
+  color:#ffffff;
+}
+
+.footer-content {
+  margin: 2% 10% 0 10%;
+}
+
+.footer-nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
+@media (max-width: 700px) {
+  .footer-nav ul {
+    flex-direction: column;
+  }
+}
+
+.footer-nav ul li{
+  margin: 1rem 0 1rem 0;
+}
+
+.footer-content h3 {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.footer-content h4 {
+  font-style: italic;
+  margin: 0;
+  padding: 20px;
+}
+
+
+.icon{
+    background-color: transparent;
+    border: none; 
+    padding: 0; 
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
