@@ -18,43 +18,35 @@ a {
 
 .content{
   max-width: 1920px;
-  min-height: 100vh;
+  min-height: 98vh;
   margin: 0 auto;
-  padding: 2vh 5vw;
+  padding: 1vh 5vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: stretch;
 }
 
-
-/*  Av. page main content box*/
-.page .content-box {
-  height: fit-content;
-  min-height: calc(100vh - 50px);
-  margin: 0;
-  padding: 0;
-}
-
-.page .content-box .content-info{
-  padding: 30px;
+.content .content-info{
   text-align: center;
+  margin: 1vh auto;
 }
 
-.page .content-box .content-info h1{
-  font-size: 5rem;
+.content .content-info h1{
+  font-size: 8vmax;
   margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.page .content-box .content-info h2{
-  font-size: 1.5rem;
+.content .content-info h2{
+  font-size: 1.5vmax;
   font-weight: normal;
 }
 
-.page .content-box .content-main{
+.content .content-main{
   display: flex;
   justify-content: space-around;
+  row-gap: 15px;
   flex-wrap: wrap;
-  margin: 0;
+  margin: auto 0;
   padding: 0;
 }
