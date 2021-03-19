@@ -1,6 +1,6 @@
 html{
-    scroll-behavior: smooth;
-    height: 100%;
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
@@ -25,7 +25,6 @@ a {
 
 .content{
   width: min(1920px,100%);
-  padding: 40px 5vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -54,5 +53,5 @@ a {
   justify-content: space-around;
   flex-wrap: wrap;
   margin: auto 0;
-  padding: 0;
+  padding: 40px 5vw;
 }
