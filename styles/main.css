@@ -38,13 +38,13 @@ a {
 }
 
 .content .content-info h1{
-  font-size: clamp(2rem,8vw,8rem);
+  font-size: clamp(4rem,8vw,8rem);
   margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .content .content-info h2{
-  font-size: clamp(0.25rem,2vw,2rem);
+  font-size: clamp(1rem,2vw,2rem);
   font-weight: normal;
 }
 
