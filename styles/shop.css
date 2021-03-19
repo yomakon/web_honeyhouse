@@ -22,14 +22,15 @@
   height: 100%;
   width: 100%;
   text-align: center;
-  color: white;
-  background-color: #e99400;
   font-family: inherit;
-  display: none;
+  color: white;
+  background-color: #e99400;  
+  display: flex;
+  opacity: 0;
 }
 
 .product-tile:hover .product-info{
-  display: flex;
+  opacity: 100%;
   transition-duration: 0.5s;
 }
 
