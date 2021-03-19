@@ -5,51 +5,48 @@
   width: 300px;
   text-align: center;
   background-color: white;  
+  cursor: pointer;
 }
 
 .news-article-info{
   margin: 5px;
 }
 
-.news-article-info .article-image{
-  clip-path: circle(50%);
-  width: 70%;
+.article-image{
+  width: 100%;
   height: auto;
+  border-radius: 50%;
 }
 
 .news-article-info .article-header{
-  font-size: x-large;
+  font-size: 2rem;
   margin: 5px;
 }
 
-.news-article-info .article-time{
-  font-size: large;
+.article-time{
+  font-size: 1.5rem;
   font-weight: lighter;
+  margin: 0;
 }
 
 .news-article-box .article-description{
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: auto 0;
+  opacity: 0.7;
 }
 
-.news-article-box .article-read{
-  font-size: large;
-  font-weight: bold;
-  font-family: inherit;
-  text-align: center;
-  background-color: white;
+.news-article-box:hover .article-image{
+  border-radius: 25%;
+  filter: saturate(1.5);
+  transition-duration: 0.5s;
+}
+
+.news-article-box:hover .article-header{
   color: #e99400;
-  border: #e99400;
-  border-style: solid;
-  margin: 10%;
+  transition-duration: 0.5s;
 }
 
-.news-article-box .article-read a{
-  color: inherit;
-}
-
-.news-article-box .article-read:hover{
-  background-color:#e99400;
-  color: white;
+.news-article-box:hover .article-description{
+  opacity: 1;
+  transition-duration: 0.5s;
 }

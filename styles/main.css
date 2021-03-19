@@ -1,9 +1,16 @@
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   cursor: default;
   font-family: Arial, Helvetica, sans-serif;
-  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -17,35 +24,34 @@ a {
 }
 
 .content{
-  max-width: 1920px;
-  min-height: 98vh;
-  margin: 0 auto;
-  padding: 1vh 5vw;
+  width: min(1920px,100%);
+  padding: 40px 5vw;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
+  justify-content: space-between;
+  flex: 1 0 auto;
+  align-self: center;
 }
 
 .content .content-info{
   text-align: center;
-  margin: 1vh auto;
+  margin: 5vh auto;
 }
 
 .content .content-info h1{
-  font-size: 8vmax;
+  font-size: clamp(2rem,8vw,8rem);
   margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .content .content-info h2{
-  font-size: 1.5vmax;
+  font-size: clamp(0.25rem,2vw,2rem);
   font-weight: normal;
 }
 
 .content .content-main{
   display: flex;
   justify-content: space-around;
-  row-gap: 15px;
   flex-wrap: wrap;
   margin: auto 0;
   padding: 0;

@@ -1,10 +1,7 @@
 /*  "Shop" page styles */
 
 .products-box{
-  width: 100vw;
-  margin-bottom: 5%;
-  overflow: hidden;
-
+  width: 100%;
 }
 
 .product-tile{
@@ -12,16 +9,6 @@
   position: relative;
   width: calc(100%/7);
   padding-bottom: calc(100%/7);
-  background-color: gray;
-}
-
-.product-tile:nth-child(even){
-  background-color:lightgray;
-}
-
-.product-tile:hover .product-info{
-  background-color: #e99400;
-  color: white;
 }
 
 .product-image{
@@ -32,28 +19,35 @@
 .product-info
 {
   position: absolute;
-  width: 100%;
   height: 100%;
+  width: 100%;
   text-align: center;
-  color: transparent;
+  color: white;
+  background-color: #e99400;
   font-family: inherit;
-  transition: 0.5s;
+  display: none;
+}
+
+.product-tile:hover .product-info{
+  display: flex;
+  transition-duration: 0.5s;
 }
 
 .product-info .text{
-  height: 80%;
-  margin: 10%;
+  margin: 5px 5px;
+  width: 100%;
   display: flex;
   flex-flow: column;
   align-content: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  font-size: clamp(0.8rem,1.8vw,2rem);
 }
 
 .product-info .text h1
 {
   padding: 0;
   margin: 0;
-  font-size: larger;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -61,8 +55,7 @@
 {
   padding: 0;
   margin: 0;
-
-  font-size: medium;
+  font-size: 0.7em;
   font-weight: lighter;
 }
 
@@ -70,8 +63,8 @@
 {
   padding: 0;
   margin: 0;
-  font-size: larger;
   font-weight: bold;
+  font-size: 1em;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
