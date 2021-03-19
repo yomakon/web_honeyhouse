@@ -1,8 +1,6 @@
 /*  "Contacts" page styles  */
 
 .accounts-box{
-  padding-left: 5%;
-  margin-bottom: 5%;
   display: flex;
   flex-direction: column;
 }
@@ -10,24 +8,23 @@
 .accounts-box .account-line{
   font-size: x-large;
   font-weight: bold;
-  height: 10%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  height: 40px;
+  margin: 5px 0;
   padding:0;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.accounts-box .account-line:hover, .accounts-box .account-line a:hover{
+.accounts-box .account-line:hover{
   filter: invert(60%) sepia(52%) saturate(3626%) hue-rotate(10deg) brightness(103%) contrast(101%);  
+  transition-duration: 0.5s;
 }
 
 .account-line .media-icon{
   height: 32px;
   width: auto;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px;
 }
 
 @media screen and (max-width: 760px){
@@ -37,7 +34,6 @@
 }
 
 .feedback-form-box{
-  margin-bottom: 5%;
   max-width: 50%;
   min-width: 300px;
 }
@@ -45,7 +41,6 @@
 .feedback-form{
   display: flex;
   flex-flow: column;
-
 }
 
 .feedback-form-title{
@@ -54,18 +49,15 @@
   font-size: x-large;
   text-align: center;
   width: 100%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin: 5px auto;
 }
 
 .feedback-form-field{
-  width: 83%;
-  padding: 2% 4%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-right: 5%;
   border-style: none;
-  box-shadow: 0 0 3px 1px gainsboro;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  box-shadow: 0 0 3px 1px lightgray;
   font-family: inherit;
   font-size: large;
   resize: none;
@@ -73,6 +65,7 @@
 
 .feedback-form-field:focus{
   box-shadow: 0 0 3px 1px #e99400;
+  transition-duration: 0.5s;
 }
 
 .feedback-form-button{
@@ -82,11 +75,10 @@
   font-family: inherit;
   font-size: large;
   text-align: center;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  width: 30%;
+  margin: 5px 0;
+  width: 40px;
   min-width:max-content;
-  height: 12%;
+  height: 40px;
   min-height: max-content;  
   cursor: pointer;
 }
@@ -95,4 +87,5 @@
   background-color: white;
   color: #e99400;
   box-shadow: 0 0 3px 1px #e99400;
+  transition-duration: 0.5s;  
 }
